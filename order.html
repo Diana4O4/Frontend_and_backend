@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заявки</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="site-header">
+		<div class="site-header__inner">
+			<a class="site-header__link" href="index.html">
+				<h1 class="site-header__logo">ShopProject</h1>
+			</a>
+	
+			<nav class="site-nav" aria-label="Основная навигация">
+				<ul class="site-nav__list">
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="index.html">
+							Главная
+						</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="catalog.html">Каталог</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="product.html">Товар</a>
+					</li>
+                    <li class="site-nav__item">
+						<a class="site-nav__link site-nav__link--active" href="order.html">Заказ</a>
+					</li>
+                    <li class="site-nav__item">
+						<a class="site-nav__link" href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="order-form__section">
+			<h1 class="order-dialog__title" id="order-dialog-title">
+				Оформление заявки
+			</h1>
+			<form class="order-form" id="order-form" action="#" method="post">
+				<div class="order-form__field">
+					<label class="order-form__label" for="order-name">Имя</label>
+					<input
+						class="order-form__input"
+						id="order-name"
+						name="name"
+						type="text"
+						required
+					>
+				</div>
+
+				<div class="order-form__field">
+					<label class="order-form__label" for="order-sname">Фамилия</label>
+					<input
+						class="order-form__input"
+						id="order-sname"
+						name="sname"
+						type="text"
+						required
+					>
+				</div>
+			
+				<div class="order-form__field">
+					<label class="order-form__label" for="order-email">E-mail</label>
+					<input
+						class="order-form__input"
+						id="order-email"
+						name="email"
+						type="email"
+						required
+					>
+				</div>
+			
+				<div class="order-form__actions">
+					<button class="button button--primary" type="submit">
+						Отправить заявку
+					</button>
+				</div>
+			</form>
+	
+			<p class="success-message hidden" id="success-message">
+				Форма успешно отправлена!
+			</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2026 Учебный проект. Все права защищены.</p>
+		<p>Дисциплина: Фронтенд и бэкенд разработка</p>
+	</footer>
+
+	<script src="./js/main.js"></script>
+</body>
+</html>

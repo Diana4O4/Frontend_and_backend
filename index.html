@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Учебный интернет-магазин">
+	<meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
+	<meta property="og:image" content="https://username.github.io/kr1-html-css-shop/images/preview.jpg">
+	<title>Учебный интернет-магазин</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/main.js" defer></script>
+</head>
+
+
+<body>
+	<header class="site-header">
+		<div class="site-header__inner">
+			<a class="site-header__link" href="index.html">
+				<h1 class="site-header__logo">ShopProject</h1>
+			</a>
+	
+			<nav class="site-nav" aria-label="Основная навигация">
+				<ul class="site-nav__list">
+					<li class="site-nav__item">
+						<a class="site-nav__link site-nav__link--active" href="index.html">
+							Главная
+						</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="catalog.html">Каталог</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="product.html">Товар</a>
+					</li>
+                    <li class="site-nav__item">
+						<a class="site-nav__link" href="order.html">Заказ</a>
+					</li>
+                    <li class="site-nav__item">
+						<a class="site-nav__link" href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<h1>Учебный интернет-магазин</h1>
+			<p>
+				Это стартовая страница учебного frontend-проекта.
+				В дальнейшем на её основе будет разработан многостраничный сайт
+				интернет-магазина или каталога услуг.
+			</p>
+			<a class="button" href="#popular">Перейти к товарам</a>
+		</section>
+
+		<section class="section" id="advantages">
+			<h2>Преимущества проекта</h2>
+		
+			<ul class="advantages-list">
+				<li>понятная HTML-структура;</li>
+				<li>семантические блоки страницы;</li>
+				<li>подключение внешнего CSS-файла;</li>
+				<li>подготовка к разработке многостраничного сайта.</li>
+			</ul>
+		</section>
+		<section class="section" id="popular">
+			<h2>Популярные товары</h2>
+		
+			<div class="products-grid">
+				<article class="product-card product-card--featured">
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Hznjh05R3tJBnQBAkFkQ_r0Eqyp_QMualQKSxzbH0Q&s=10"
+						alt="огурец"
+						class="product-card__img"
+					>
+					<h3 class="product-card__title">Товар 1</h3>
+					<p class="product-card__description">Краткое описание учебного товара.</p>
+					<p class="product-card__price">Цена: 1000 руб.</p>
+					<a class="product__link" href="order.html">
+						<button class="button button--primary" type="button" data-product="Товар 1">
+							Заказать
+						</button>
+					</a>
+				</article>
+				<article class="product-card product-card--featured">
+					<img
+						src="https://s3.ibta.ru/goods/603635/7811b95396ac2d6cbb587b24eb1a3e54_x.jpg"
+						alt="вантуз"
+						class="product-card__img"
+					>
+					<h3 class="product-card__title">Товар 2</h3>
+					<p class="product-card__description">Краткое описание учебного товара.</p>
+					<p class="product-card__price">Цена: 1500 руб.</p>
+					<a class="product__link" href="order.html">
+						<button class="button button--primary" type="button" data-product="Товар 2">
+							Заказать
+						</button>
+					</a>
+				</article>
+				<article class="product-card product-card--featured">
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_a5mUOmqvB0c9bLl8L8jIrkW_5NqTx1Rv_eGyvNyYxqPCCY2EvabaKNCe&s=10"
+						alt="логика"
+						class="product-card__img"
+					>
+					<h3 class="product-card__title">Товар 5</h3>
+					<p class="product-card__description">Краткое описание учебного товара.</p>
+					<p class="product-card__price">Цена: 3000 руб.</p>
+					<a class="product__link" href="order.html">
+						<button class="button button--primary" type="button" data-product="Товар 5">
+							Заказать
+						</button>
+					</a>
+				</article>
+			</div>
+		</section>
+		<aside class="aside-info">
+			<h2>Информация для студентов</h2>
+			<p>
+				На следующих практических занятиях этот проект будет расширяться:
+				появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
+				БЭМ-структура и адаптивная версия сайта.
+			</p>
+		</aside>
+	</main>
+
+	<footer id="contacts">
+		<p>&copy; 2026 Учебный проект. Все права защищены.</p>
+		<p>Дисциплина: Фронтенд и бэкенд разработка</p>
+	</footer>
+</body>
+
+</html>

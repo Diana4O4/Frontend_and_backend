@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар года</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="site-header">
+		<div class="site-header__inner">
+			<a class="site-header__link" href="index.html">
+				<h1 class="site-header__logo">ShopProject</h1>
+			</a>
+	
+			<nav class="site-nav" aria-label="Основная навигация">
+				<ul class="site-nav__list">
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="index.html">
+							Главная
+						</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="catalog.html">Каталог</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link site-nav__link--active" href="product.html">Товар</a>
+					</li>
+                    <li class="site-nav__item">
+						<a class="site-nav__link" href="order.html">Заказ</a>
+					</li>
+                    <li class="site-nav__item">
+						<a class="site-nav__link" href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section>
+			<h1>Ремень для пива с пряжкой</h1>
+		</section>
+		<section class="product">
+			<div class="product__info">
+				<div class="product__img-wrapper">
+					<a
+					class="product__img-link"
+					target="_blank" 
+					href="https://www.wildberries.ru/catalog/911886259/detail.aspx"
+					>
+						<img
+						id="img"
+						src="./images/product.jpg"
+						alt="Пиво-пояс"
+						>
+					</a>
+				</div>
+				<div class="product-card__info">
+					<h2>Особый товар :O</h2>
+					<p class="product-card__description">Краткое описание учебного товара.</p>
+					<p class="product-card__price">Цена: 6767.67 руб.</p>
+					<a class="product__link" href="order.html">
+						<button class="button button--primary" type="button" data-product="Товар 1">
+							Заказать
+						</button>
+					</a>
+				</div>
+			</div>
+			<table class="table">
+				<caption>Характеристики</caption>
+				<thead>
+					<tr>
+						<th>Параметр</th>
+						<th>Описание / Значение</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Особенности</th>
+						<td>Ремень прикрепляется к поясу. Откройте застежку и вставьте иностранные пивные бутылки, коктейльные бутылки или банки Кока-Колы.</td>
+					</tr>
+					<tr>
+						<th>Материал</th>
+						<td>Цинковый сплав</td>
+					</tr>
+					<tr>
+						<th>Цвет</th>
+						<td>Как на фото</td>
+					</tr>
+					<tr>
+						<th>Размер</th>
+						<td>102 * 80 мм / 4,01 * 3,14 дюйма</td>
+					</tr>
+					<tr>
+						<th>Диаметр круга</th>
+						<td>70 мм / 2,75 дюйма</td>
+					</tr>
+					<tr>
+						<th>Комплектация</th>
+						<td>1 шт. Пряжка</td>
+					</tr>
+					<tr>
+						<th>Примечания</th>
+						<td>Пожалуйста, допускается погрешность 1-3 мм из-за ручного измерения. Из-за разницы в дисплее и освещении изображение может не точно передавать реальный цвет товара. Спасибо за понимание.</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="product__a">
+				<a href="./order.html">
+					Заказать товар можно здесь!
+				</a>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2026 Учебный проект. Все права защищены.</p>
+		<p>Дисциплина: Фронтенд и бэкенд разработка</p>
+	</footer>
+</body>
+</html>
